@@ -1,0 +1,11 @@
+com\zyq\register\Register.class
+com\zyq\protocol\http\HttpServer.class
+com\zyq\provider\api\DemoService.class
+com\zyq\provider\Provider.class
+com\zyq\framework\Invocation.class
+com\zyq\protocol\http\HttpClient.class
+com\zyq\framework\Url.class
+com\zyq\protocol\http\DispathcerServlet.class
+com\zyq\consumer\Consumer.class
+com\zyq\provider\impl\DemoServiceImpl.class
+com\zyq\protocol\http\HttpServerHandler.class
