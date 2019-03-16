@@ -5,6 +5,7 @@ import com.zyq.framework.Protocol;
 import com.zyq.framework.Url;
 
 public class NettyProtocol implements Protocol{
+
     @Override
     public void start(Url url) throws InterruptedException {
         NettyServer nettyServer = new NettyServer();
