@@ -1,7 +1,7 @@
 package com.zyq.protocol.dubbo;
 
 import com.zyq.framework.Invocation;
-import com.zyq.framework.Url;
+import com.zyq.framework.URL;
 import com.zyq.register.Register;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
@@ -69,7 +69,7 @@ public class NettyClient {
         channel.writeAndFlush(invocation);
 
        /* InetSocketAddress insocket = (InetSocketAddress) nettyClientHandler.context.channel().localAddress();*/
-        Class serviceImpl = Register.get(new Url(hostName, port),invocation.getInterfaceName());
+        Class serviceImpl = Register.get(new URL(hostName, port),invocation.getInterfaceName());
 
         Method method = serviceImpl.getMethod(invocation.getMethodName(), invocation.getParamsTypes());
         Object result = method.invoke(serviceImpl.newInstance(), invocation.getParams());

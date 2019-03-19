@@ -1,9 +1,8 @@
 package com.zyq.framework;
 
 import java.io.Serializable;
-import java.util.Objects;
 
-public class Url implements Serializable{
+public class URL implements Serializable{
     private String hostName;
     private Integer port;
 
@@ -15,7 +14,7 @@ public class Url implements Serializable{
         this.port = port;
     }
 
-    public Url(String hostName, Integer port) {
+    public URL(String hostName, Integer port) {
         this.hostName = hostName;
         this.port = port;
     }
@@ -32,14 +31,14 @@ public class Url implements Serializable{
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Url url = (Url) o;
-        return Objects.equals(hostName, url.hostName) &&
-                Objects.equals(port, url.port);
+        URL url = (URL) o;
+        if (hostName != null ? !hostName.equals(url.hostName) : url.hostName != null) return false;
+        return port != null ? port.equals(url.port) : url.port == null;
     }
-
     @Override
     public int hashCode() {
-
-        return Objects.hash(hostName, port);
+        int result = hostName != null ? hostName.hashCode() : 0;
+        result = 31 * result + (port != null ? port.hashCode() : 0);
+        return result;
     }
 }
