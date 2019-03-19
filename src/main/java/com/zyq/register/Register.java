@@ -23,6 +23,7 @@ public class Register {
     }
 
     public static Class get(Url url, String interfaceName){
+        REGISTER.get(interfaceName).get(url);
         return REGISTER.get(interfaceName).get(url);
     }
 

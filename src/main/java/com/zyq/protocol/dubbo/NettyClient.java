@@ -1,6 +1,8 @@
 package com.zyq.protocol.dubbo;
 
 import com.zyq.framework.Invocation;
+import com.zyq.framework.Url;
+import com.zyq.register.Register;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -10,6 +12,9 @@ import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.net.InetSocketAddress;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -17,6 +22,9 @@ public class NettyClient {
 
     private static ExecutorService executorService = Executors.newCachedThreadPool();
 
+    private Channel channel;
+
+    public NettyClientHandler nettyClientHandler = new NettyClientHandler();
 
     public void start(String hostName, Integer port, Invocation invocation) throws InterruptedException {
         final EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
@@ -33,10 +41,12 @@ public class NettyClient {
                         ClassResolvers.weakCachingResolver(this.getClass().getClassLoader()
                         )));
                 pipeline.addLast("encoder", new ObjectEncoder());
-                pipeline.addLast(new NettyClientHandler());
+                pipeline.addLast(nettyClientHandler);
             }
         });
+        //连接服务端
         ChannelFuture channelFuture = bootstrap.connect(hostName, port).sync();
+        channel = channelFuture.channel();
         channelFuture.addListener((new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture channelFuture) throws Exception {
@@ -54,9 +64,19 @@ public class NettyClient {
         eventLoopGroup.shutdownGracefully();*/
     }
 
-    public String post(String hostName, Integer port, Invocation invocation) throws InterruptedException {
+    public String post(String hostName, Integer port, Invocation invocation) throws InterruptedException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         start(hostName, port, invocation);
-        return null;
+        channel.writeAndFlush(invocation);
+
+       /* InetSocketAddress insocket = (InetSocketAddress) nettyClientHandler.context.channel().localAddress();*/
+        Class serviceImpl = Register.get(new Url(hostName, port),invocation.getInterfaceName());
+
+        Method method = serviceImpl.getMethod(invocation.getMethodName(), invocation.getParamsTypes());
+        Object result = method.invoke(serviceImpl.newInstance(), invocation.getParams());
+        return (String) result;
     }
 
+    public void setChannel(Channel channel) {
+        this.channel = channel;
+    }
 }

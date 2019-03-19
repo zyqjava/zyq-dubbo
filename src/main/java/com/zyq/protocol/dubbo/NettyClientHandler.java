@@ -8,9 +8,9 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 import io.netty.channel.SimpleChannelInboundHandler;
 
-public class NettyClientHandler extends ChannelInboundHandlerAdapter{
+public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
-    private ChannelHandlerContext context;
+    public ChannelHandlerContext context;
 
     private Invocation invocation;
 
@@ -29,13 +29,14 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter{
         context = ctx;
     }
 
-    public void setInvocation(Invocation invocation) {
-        this.invocation = invocation;
-    }
-
     public  Object call() throws InterruptedException {
         context.writeAndFlush(this.invocation);
         wait();
         return result;
     }
+
+    public void setInvocation(Invocation invocation) {
+        this.invocation = invocation;
+    }
+
 }
