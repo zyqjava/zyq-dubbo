@@ -2,7 +2,7 @@ package com.zyq.jedis.client;
 
 import com.zyq.jedis.protocol.RedisProtocol;
 import com.zyq.jedis.transfer.Connection;
-import com.zyq.jedis.utils.StringEncoder;
+import com.zyq.jedis.utils.SafeEncoder;
 
 public class ZyqClient {
 
@@ -19,12 +19,12 @@ public class ZyqClient {
      * @return
      */
     public String set(final String key, String value) {
-        connection.sendCommand(RedisProtocol.Command.SET, StringEncoder.encoder(key), StringEncoder.encoder(value));
+        connection.sendCommand(RedisProtocol.Command.SET, SafeEncoder.encoder(key), SafeEncoder.encoder(value));
         return connection.getStatusReply();
     }
 
     public String get(final String key) {
-        connection.sendCommand(RedisProtocol.Command.GET, StringEncoder.encoder(key));
+        connection.sendCommand(RedisProtocol.Command.GET, SafeEncoder.encoder(key));
         return connection.getStatusReply();
     }
 }

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/protocol/RedisProtocol.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" />
+      <change beforePath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java" />
+      <change beforePath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/SafeEncoder.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zyq-dubbo-transacmanager/target/" />
@@ -42,20 +38,8 @@
       <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SocketHack.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+            <state relative-caret-position="1040">
+              <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,17 +62,17 @@
       <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="60" />
+            <state relative-caret-position="-1300">
+              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
+            <state relative-caret-position="923">
               <caret line="154" column="45" lean-forward="true" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -97,25 +81,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZyqClient.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZyqClient.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+            <state relative-caret-position="36">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#291#292#0" expanded="true" />
+                <element signature="e#229#230#0" expanded="true" />
+                <element signature="e#289#290#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StringEncoder.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java">
+      <file leaf-file-name="SafeEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/SafeEncoder.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="416">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -209,6 +193,7 @@
         <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/Client.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java" />
       </list>
     </option>
   </component>
@@ -601,7 +586,7 @@
       <workItem from="1553237525888" duration="679000" />
       <workItem from="1553480675842" duration="6700000" />
       <workItem from="1553580530707" duration="17000" />
-      <workItem from="1553654727559" duration="14685000" />
+      <workItem from="1553654727559" duration="15290000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1552697670827</created>
@@ -687,11 +672,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553671390752</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="jedis by myself">
+      <created>1553677009502</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1553677009502</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90569000" />
+    <option name="totallyTimeSpent" value="91174000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
@@ -705,10 +697,10 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27736053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -773,7 +765,8 @@
     <MESSAGE value="处理事务的一致性" />
     <MESSAGE value="redis" />
     <MESSAGE value="redis ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis ok" />
+    <MESSAGE value="jedis by myself" />
+    <option name="LAST_COMMIT_MESSAGE" value="jedis by myself" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1160,26 +1153,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Client.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1191,23 +1164,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java">
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/SafeEncoder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#291#292#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1221,20 +1182,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1040">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="60" />
+        <state relative-caret-position="-1300">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
+        <state relative-caret-position="923">
           <caret line="154" column="45" lean-forward="true" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#289#290#0" expanded="true" />
           </folding>
         </state>
       </provider>

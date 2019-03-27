@@ -2,7 +2,7 @@ package com.zyq.jedis.utils;
 
 import java.io.UnsupportedEncodingException;
 
-public class StringEncoder {
+public class SafeEncoder {
 
     public static byte[] encoder(String str) {
         if (str == null || "".equals(str)) {
