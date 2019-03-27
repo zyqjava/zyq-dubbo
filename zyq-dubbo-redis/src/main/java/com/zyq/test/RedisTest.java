@@ -1,5 +1,6 @@
 package com.zyq.test;
 
+import com.zyq.jedis.client.ZyqClient;
 import com.zyq.redis.RedisClient;
 import redis.clients.jedis.Jedis;
 
@@ -25,11 +26,6 @@ public class RedisTest {
     public void testRedisPool() {
         RedisClient.getJedis().set("newname", "test");
         System.out.println(RedisClient.getJedis().get("newname"));
-    }
-
-    public static void main(String[] args) {
-        RedisTest test = new RedisTest();
-        test.connectRedis();
     }
 
 
@@ -153,4 +149,9 @@ public class RedisTest {
         System.out.println(jedis.lrange("a", 0, -1));
     }
 
+
+    public static void main(String[] args) {
+       ZyqClient client = new ZyqClient("203.195.157.208", 6379);
+       System.out.println(client.get("zyq"));
+    }
 }

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/protocol/RedisProtocol.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java" />
+      <change beforePath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" afterPath="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zyq-dubbo-transacmanager/target/" />
@@ -34,21 +39,57 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/pom.xml">
+      <file leaf-file-name="Connection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="61" column="21" lean-forward="false" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
+            <state relative-caret-position="246">
+              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SocketHack.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="584">
+              <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisProtocol.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/protocol/RedisProtocol.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisClient.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java">
+      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="298">
+              <caret line="154" column="45" lean-forward="true" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,17 +97,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
+      <file leaf-file-name="ZyqClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1534">
-              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            <state relative-caret-position="572">
+              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#308#309#0" expanded="true" />
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#1373#1388#0" expanded="true" />
+                <element signature="e#231#232#0" expanded="true" />
+                <element signature="e#291#292#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringEncoder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,8 +202,13 @@
         <option value="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServer.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServerHandler.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-redis/pom.xml" />
-        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/protocol/RedisProtocol.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/Client.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java" />
       </list>
     </option>
   </component>
@@ -227,49 +282,59 @@
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.0.8.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.0.8.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.0.8.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.0.8.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.0.8.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.0.8.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="springframework" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq" type="462c0819:PsiDirectoryNode" />
+              <item name="jedis" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -313,31 +378,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.RedisClient">
+  <component name="RunManager" selected="Application.RedisTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="WIDTH" value="400" />
       <option name="HEIGHT" value="300" />
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <module />
-    </configuration>
-    <configuration name="AnnoUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.zyq.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.zyq.utils.AnnoUtil" />
-      <option name="VM_PARAMETERS" value="-verbose:class" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="zyq-dubbo" />
-      <envs />
     </configuration>
     <configuration name="Consumer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -385,6 +431,44 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.zyq.redis.RedisClient" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="zyq-dubbo-redis" />
+      <envs />
+    </configuration>
+    <configuration name="RedisTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zyq.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zyq.test.RedisTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="zyq-dubbo-redis" />
+      <envs />
+    </configuration>
+    <configuration name="SocketHack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.zyq.jedis.hack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.zyq.jedis.hack.SocketHack" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -470,18 +554,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="4">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.Consumer" />
       <item index="1" class="java.lang.String" itemvalue="Application.Provider" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AnnoUtil" />
-      <item index="3" class="java.lang.String" itemvalue="Application.RedisClient" />
+      <item index="2" class="java.lang.String" itemvalue="Application.RedisClient" />
+      <item index="3" class="java.lang.String" itemvalue="Application.SocketHack" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RedisTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Application.RedisClient" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Provider" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Consumer" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AnnoUtil" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Application.RedisTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.SocketHack" />
+        <item index="2" class="java.lang.String" itemvalue="Application.RedisClient" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Provider" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Consumer" />
       </list>
     </recent_temporary>
   </component>
@@ -515,7 +601,7 @@
       <workItem from="1553237525888" duration="679000" />
       <workItem from="1553480675842" duration="6700000" />
       <workItem from="1553580530707" duration="17000" />
-      <workItem from="1553654727559" duration="9949000" />
+      <workItem from="1553654727559" duration="14685000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1552697670827</created>
@@ -594,11 +680,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553669651547</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="redis ok">
+      <created>1553671390752</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1553671390752</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85833000" />
+    <option name="totallyTimeSpent" value="90569000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
@@ -612,12 +705,12 @@
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27736053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27736053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -715,136 +808,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/util/DOMWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2308">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/startup/Tomcat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="58" column="39" lean-forward="false" selection-start-line="58" selection-start-column="39" selection-end-line="58" selection-end-column="39" />
-          <folding>
-            <marker date="1552463699670" expanded="false" signature="0:104" ph="/.../" />
-            <marker date="1552463699670" expanded="false" signature="151:1899" ph="..." />
-            <marker date="1552463699670" expanded="false" signature="7915:7926" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="7951:7957" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="8001:8012" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="8035:8041" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="8076:8087" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="8104:8110" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="8149:8160" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="8178:8184" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="8251:8327" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="8395:8472" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="8565:8703" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="8796:8965" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9054:9187" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9276:9427" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9478:9539" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9591:9653" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9704:9765" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="9819:9883" ph="{...}" />
-            <marker date="1552463699670" expanded="false" signature="9934:9945" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="9975:9981" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="10033:10256" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="10294:10650" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="10702:11155" ph="{...}" />
-            <marker date="1552463699670" expanded="false" signature="11188:11199" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="11241:11247" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="11284:11704" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="11732:12062" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="12094:12542" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="12574:13024" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="13099:13175" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="13270:13693" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="13771:14181" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="14285:14935" ph="{...}" />
-            <marker date="1552463699670" expanded="false" signature="14992:15003" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="15045:15051" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="15092:15103" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="15155:15161" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="15203:15214" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="15246:15252" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="15287:17106" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="17150:17599" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="17657:17977" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="18043:18783" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="18842:19468" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="19501:20274" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="20331:20443" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="20500:21382" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="21455:21657" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="21742:22238" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="22317:23442" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="23516:25328" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="23616:23887" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="23947:24241" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="24317:24982" ph="{...}" />
-            <marker date="1552463699670" expanded="false" signature="25018:25033" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="25043:25053" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="25093:25108" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="25121:25131" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="25168:25183" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="25204:25214" ph=" }" />
-            <marker date="1552463699670" expanded="false" signature="25255:25270" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="25312:25322" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="25405:25680" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="25446:25457" ph="{}" />
-            <marker date="1552463699670" expanded="true" signature="25516:25674" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="25754:26531" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="25792:25803" ph="{}" />
-            <marker date="1552463699670" expanded="true" signature="25862:26525" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="26581:27285" ph="{...}" />
-            <marker date="1552463699670" expanded="true" signature="26613:26624" ph="{}" />
-            <marker date="1552463699670" expanded="false" signature="26679:26694" ph=" { " />
-            <marker date="1552463699670" expanded="false" signature="26744:26754" ph=" }" />
-            <marker date="1552463699670" expanded="true" signature="26814:27279" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/target/maven-archiver/pom.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zyq/framework/ProxyFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="845">
-          <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="41" selection-end-line="96" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zyq/consumer/Consumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zyq/app/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zyq/provider/api/DemoService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -1157,19 +1120,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1534">
-          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-            <element signature="e#354#355#0" expanded="true" />
-            <element signature="e#1373#1388#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.0.8.RELEASE/spring-context-5.0.8.RELEASE.jar!/org/springframework/context/LifecycleProcessor.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="104">
@@ -1202,10 +1152,87 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_66/src.zip!/com/sun/org/apache/xpath/internal/operations/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/hack/SocketHack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="27" column="19" lean-forward="true" selection-start-line="27" selection-start-column="19" selection-end-line="27" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/transfer/Connection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.9.0/jedis-2.9.0.jar!/redis/clients/jedis/Client.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+          <folding>
+            <element signature="e#1662#1663#0" expanded="true" />
+            <element signature="e#1711#1712#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/utils/StringEncoder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/client/ZyqClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#231#232#0" expanded="true" />
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/jedis/protocol/RedisProtocol.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/redis/RedisClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="156">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-redis/src/main/java/com/zyq/test/RedisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="154" column="45" lean-forward="true" selection-start-line="154" selection-start-column="45" selection-end-line="154" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
