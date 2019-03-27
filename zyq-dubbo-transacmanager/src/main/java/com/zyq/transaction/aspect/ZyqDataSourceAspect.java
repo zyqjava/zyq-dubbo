@@ -12,7 +12,11 @@ import java.sql.Connection;
 @Component
 public class ZyqDataSourceAspect {
 
+
+
+
     /**
+     * 首先获取事务的控制权
      * 切面切在DataSource的getConnection上
      * @param point
      * @return
