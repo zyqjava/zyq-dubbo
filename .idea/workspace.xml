@@ -1,88 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_consumer_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_consumer_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_framework_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_framework_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_protocol_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_protocol_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_provider_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_provider_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_register_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_register_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_transacmanager_war.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_transacmanager_war_exploded.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_13.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_8_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/zyq/config/AppConfig.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-consumer/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-consumer/zyq-dubbo-consumer.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/zyq-dubbo-framework.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/zyq-dubbo-protocol.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/zyq-dubbo-provider.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-register/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-register/zyq-dubbo-register.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/zyq-dubbo-transacmanager.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/zyq_dubbo_war_exploded.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+    <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="搞定netty，写好注释">
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/annotation/ZyqTransactional.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqDataSourceAspect.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqTranscationAspect.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/connection/ZyqConnection.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/consumer/Consumer.java" afterPath="$PROJECT_DIR$/zyq-dubbo-consumer/src/main/java/com/zyq/consumer/Consumer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/framework/Invocation.java" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/src/main/java/com/zyq/framework/Invocation.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/framework/Protocol.java" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/src/main/java/com/zyq/framework/Protocol.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/framework/ProtocolFactory.java" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/src/main/java/com/zyq/framework/ProtocolFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/framework/ProxyFactory.java" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/src/main/java/com/zyq/framework/ProxyFactory.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/framework/URL.java" afterPath="$PROJECT_DIR$/zyq-dubbo-framework/src/main/java/com/zyq/framework/URL.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/dubbo/NettyClient.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/dubbo/NettyProtocol.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyProtocol.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/dubbo/NettyServer.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/dubbo/NettyServerHandler.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/http/DispathcerServlet.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/http/DispathcerServlet.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/http/HttpClient.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/http/HttpClient.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/http/HttpProtocol.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/http/HttpProtocol.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/http/HttpServer.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/http/HttpServer.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/protocol/http/HttpServerHandler.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/http/HttpServerHandler.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/provider/Provider.java" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/Provider.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/provider/api/DemoService.java" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/api/DemoService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/provider/impl/DemoServiceImpl.java" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/impl/DemoServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zyq/register/Register.java" afterPath="$PROJECT_DIR$/zyq-dubbo-register/src/main/java/com/zyq/register/Register.java" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT.war" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/applicationContext.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/consumer/Consumer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/framework/Invocation.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/framework/Url.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/protocol/http/DispathcerServlet.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/protocol/http/HttpClient.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/protocol/http/HttpServer.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/protocol/http/HttpServerHandler.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/provider/Provider.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/provider/api/DemoService.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/provider/impl/DemoServiceImpl.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/classes/com/zyq/register/Register.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/lib/commons-io-1.3.2.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/lib/tomcat-annotations-api-9.0.12.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/lib/tomcat-embed-core-9.0.12.jar" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/log4j.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/zyq-dubbo-1.0-SNAPSHOT/WEB-INF/web.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo.iml" afterPath="$PROJECT_DIR$/zyq-dubbo.iml" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zyq-dubbo-transacmanager/target/" />
@@ -111,12 +35,68 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="ZyqConnection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/connection/ZyqConnection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZyqTransactional.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/annotation/ZyqTransactional.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZyqTranscationAspect.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqTranscationAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ZyqDataSourceAspect.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqDataSourceAspect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="496">
+              <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSource.java" pinned="false" current-in-tab="false">
+        <entry file="jar://E:/Java/jdk1.8.0_66/src.zip!/javax/sql/DataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="314">
+              <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="AnnotationType" />
         <option value="Class" />
       </list>
@@ -186,6 +166,8 @@
         <option value="$PROJECT_DIR$/zyq-dubbo-register/pom.xml" />
         <option value="$PROJECT_DIR$/zyq-dubbo-provider/pom.xml" />
         <option value="$PROJECT_DIR$/zyq-dubbo-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/connection/ZyqConnection.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqDataSourceAspect.java" />
       </list>
     </option>
   </component>
@@ -257,6 +239,92 @@
               <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
               <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-register" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-register" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zyq-dubbo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zyq-dubbo" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq-dubbo-transacmanager" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zyq" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="aspect" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -267,7 +335,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -480,7 +548,7 @@
       <workItem from="1553237525888" duration="679000" />
       <workItem from="1553480675842" duration="6700000" />
       <workItem from="1553580530707" duration="17000" />
-      <workItem from="1553654727559" duration="1999000" />
+      <workItem from="1553654727559" duration="2810000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1552697670827</created>
@@ -510,14 +578,22 @@
       <option name="project" value="LOCAL" />
       <updated>1552978548308</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="搞定netty，写好注释">
+      <created>1553656757000</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1553656757000</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77883000" />
+    <option name="totallyTimeSpent" value="78694000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -531,7 +607,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27736053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -628,41 +704,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/ServletConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="16" column="30" lean-forward="false" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/Servlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/ServletContextAttributeEvent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/ServletContextAttributeListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/org/apache/catalina/core/ApplicationDispatcher.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/embed/tomcat-embed-core/9.0.12/tomcat-embed-core-9.0.12.jar!/javax/servlet/RequestDispatcher.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -1035,7 +1076,7 @@
         <state relative-caret-position="364">
           <caret line="18" column="35" lean-forward="false" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
           <folding>
-            <element signature="e#520#532#0" expanded="true" />
+            <element signature="e#520#532#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1104,11 +1145,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/connection/ZyqConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/annotation/ZyqTransactional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqTranscationAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="2" column="33" lean-forward="false" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://E:/Java/jdk1.8.0_66/src.zip!/javax/sql/DataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="106" column="26" lean-forward="false" selection-start-line="106" selection-start-column="13" selection-end-line="106" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/src/main/java/com/zyq/transaction/aspect/ZyqDataSourceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="21" column="26" lean-forward="false" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>zyq-dubbo-consumer:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="Copyright.UI">
         <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1141,6 +1252,19 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>zyq-dubbo-transacmanager</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1155,6 +1279,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: commons-io:commons-io:1.3.2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
