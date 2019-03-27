@@ -6,9 +6,9 @@ import redis.clients.jedis.JedisPoolConfig;
 
 public class RedisClient {
 
-    private final static String REDIS_URL = "203.195.157.208";
+    private static final String REDIS_URL = "203.195.157.208";
 
-    private final static int REDIS_PORT = 6397;
+    private static final int REDIS_PORT = 6397;
 
     private static int MAX_ACTIVE = 1024;
 
