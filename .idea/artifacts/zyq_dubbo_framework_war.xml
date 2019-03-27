@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zyq-dubbo-framework:war">
+    <output-path>$PROJECT_DIR$/zyq-dubbo-framework/target</output-path>
+    <root id="archive" name="zyq-dubbo-framework-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zyq-dubbo-framework:war exploded" />
+    </root>
+  </artifact>
+</component>

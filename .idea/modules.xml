@@ -3,6 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/zyq-dubbo.iml" filepath="$PROJECT_DIR$/zyq-dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-consumer/zyq-dubbo-consumer.iml" filepath="$PROJECT_DIR$/zyq-dubbo-consumer/zyq-dubbo-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-framework/zyq-dubbo-framework.iml" filepath="$PROJECT_DIR$/zyq-dubbo-framework/zyq-dubbo-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-protocol/zyq-dubbo-protocol.iml" filepath="$PROJECT_DIR$/zyq-dubbo-protocol/zyq-dubbo-protocol.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-provider/zyq-dubbo-provider.iml" filepath="$PROJECT_DIR$/zyq-dubbo-provider/zyq-dubbo-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-register/zyq-dubbo-register.iml" filepath="$PROJECT_DIR$/zyq-dubbo-register/zyq-dubbo-register.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zyq-dubbo-transacmanager/zyq-dubbo-transacmanager.iml" filepath="$PROJECT_DIR$/zyq-dubbo-transacmanager/zyq-dubbo-transacmanager.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zyq-dubbo-transacmanager:war">
+    <output-path>$PROJECT_DIR$/zyq-dubbo-transacmanager/target</output-path>
+    <root id="archive" name="zyq-dubbo-transacmanager-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zyq-dubbo-transacmanager:war exploded" />
+    </root>
+  </artifact>
+</component>
