@@ -31,6 +31,7 @@
         <module>zyq-dubbo-register</module>
         <module>zyq-dubbo-provider</module>
         <module>zyq-dubbo-consumer</module>
+        <module>zyq-dubbo-redis</module>
     </modules>
     <groupId>zyq-dubbo</groupId>
   <artifactId>zyq-dubbo</artifactId>

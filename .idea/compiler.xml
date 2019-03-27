@@ -10,6 +10,7 @@
         <module name="zyq-dubbo-framework" />
         <module name="zyq-dubbo-protocol" />
         <module name="zyq-dubbo-provider" />
+        <module name="zyq-dubbo-redis" />
         <module name="zyq-dubbo-register" />
         <module name="zyq-dubbo-transacmanager" />
       </profile>
@@ -20,6 +21,7 @@
       <module name="zyq-dubbo-framework" target="1.7" />
       <module name="zyq-dubbo-protocol" target="1.7" />
       <module name="zyq-dubbo-provider" target="1.7" />
+      <module name="zyq-dubbo-redis" target="1.7" />
       <module name="zyq-dubbo-register" target="1.7" />
       <module name="zyq-dubbo-transacmanager" target="1.7" />
     </bytecodeTargetLevel>

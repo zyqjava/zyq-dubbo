@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="zyq-dubbo-redis:war">
+    <output-path>$PROJECT_DIR$/zyq-dubbo-redis/target</output-path>
+    <root id="archive" name="zyq-dubbo-redis-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="zyq-dubbo-redis:war exploded" />
+    </root>
+  </artifact>
+</component>
