@@ -13,6 +13,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter{
 
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+        //获取数据
         Invocation invocation = (Invocation) msg;
         InetSocketAddress insocket = (InetSocketAddress) ctx.channel().localAddress();
         Class serviceImpl = Register.get(new URL(insocket.getHostName(), insocket.getPort()),invocation.getInterfaceName());

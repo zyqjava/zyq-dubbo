@@ -46,7 +46,7 @@ public class Register {
     }
 
     /**
-     * 模拟负载均衡,采用随机，也可采用轮询
+     * 模拟负载均衡,采用随机，也可采用平滑加权轮询算法
      * @param interfaceName
      * @return
      * @throws IOException

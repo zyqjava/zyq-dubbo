@@ -32,7 +32,7 @@ public class NettyServer {
                                 ClassResolvers.weakCachingResolver(this.getClass().getClassLoader()
                         )));
                         pipeline.addLast("encoder", new ObjectEncoder());
-                        pipeline.addLast("handler",new NettyServerHandler());
+                        pipeline.addLast("handler",new NettyServerHandler()); //添加处理的类
                     }
                 }).option(ChannelOption.SO_KEEPALIVE,true);
         ChannelFuture channelFuture = bootstrap.bind(hostName ,port).sync();

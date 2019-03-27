@@ -7,6 +7,21 @@
           <element id="module-output" name="zyq-dubbo-provider" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="zyq-dubbo-framework-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="zyq-dubbo-framework" />
+          </element>
+          <element id="archive" name="zyq-dubbo-protocol-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="zyq-dubbo-protocol" />
+          </element>
+          <element id="archive" name="zyq-dubbo-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="zyq-dubbo" />
+          </element>
+          <element id="archive" name="zyq-dubbo-register-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="zyq-dubbo-register" />
+          </element>
+          <element id="archive" name="zyq-dubbo-provider-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="zyq-dubbo-provider" />
+          </element>
           <element id="library" level="project" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.12" />
           <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.12" />
           <element id="library" level="project" name="Maven: commons-io:commons-io:1.3.2" />
