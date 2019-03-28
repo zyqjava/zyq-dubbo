@@ -30,7 +30,7 @@ public class HttpServerHandler {
         Class implClass = Register.get(url, interfaceName);
         Method method = implClass.getMethod(invocation.getMethodName(), invocation.getParamsTypes());
         //写框架的时候不能用string
-        String result = (String) method.invoke(implClass.newInstance(), invocation.getParams());
+        Object result = method.invoke(implClass.newInstance(), invocation.getParams());
 
         OutputStream outputStream = resp.getOutputStream();
         IOUtils.write("TOMCAT" + result, outputStream);

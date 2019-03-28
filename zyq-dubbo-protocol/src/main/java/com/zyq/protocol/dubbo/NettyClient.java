@@ -1,8 +1,6 @@
 package com.zyq.protocol.dubbo;
 
 import com.zyq.framework.Invocation;
-import com.zyq.framework.URL;
-import com.zyq.register.Register;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -13,7 +11,6 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
 import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -65,14 +62,15 @@ public class NettyClient {
 
     public String post(String hostName, Integer port, Invocation invocation) throws InterruptedException, NoSuchMethodException, IllegalAccessException, InstantiationException, InvocationTargetException {
         start(hostName, port, invocation);
-        channel.writeAndFlush(invocation);
+        /*channel.writeAndFlush(invocation);
 
-       /* InetSocketAddress insocket = (InetSocketAddress) nettyClientHandler.context.channel().localAddress();*/
+       *//* InetSocketAddress insocket = (InetSocketAddress) nettyClientHandler.context.channel().localAddress();*//*
         Class serviceImpl = Register.get(new URL(hostName, port),invocation.getInterfaceName());
 
         Method method = serviceImpl.getMethod(invocation.getMethodName(), invocation.getParamsTypes());
-        Object result = method.invoke(serviceImpl.newInstance(), invocation.getParams());
-        return (String) result;
+        Object result = method.invoke(serviceImpl.newInstance(), invocation.getParams());*/
+        System.out.println(123);
+        return (String) nettyClientHandler.call();
     }
 
     public void setChannel(Channel channel) {

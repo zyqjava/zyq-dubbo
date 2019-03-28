@@ -26,9 +26,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="zyq-dubbo-framework" />
-    <orderEntry type="module" module-name="zyq-dubbo-protocol" />
-    <orderEntry type="module" module-name="zyq-dubbo" />
-    <orderEntry type="module" module-name="zyq-dubbo-provider" />
     <orderEntry type="library" name="Maven: org.apache.tomcat.embed:tomcat-embed-core:9.0.12" level="project" />
     <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-annotations-api:9.0.12" level="project" />
     <orderEntry type="library" name="Maven: commons-io:commons-io:1.3.2" level="project" />

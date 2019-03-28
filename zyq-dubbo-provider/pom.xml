@@ -61,7 +61,7 @@
     </dependency-->
         <dependency>
             <groupId>zyq-dubbo</groupId>
-            <artifactId>zyq-dubbo-framework</artifactId>
+            <artifactId>zyq-dubbo-protocol</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

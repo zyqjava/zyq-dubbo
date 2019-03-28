@@ -1,8 +1,8 @@
 package com.zyq.consumer;
 
 
-import com.zyq.framework.ProxyFactory;
 import com.zyq.provider.api.DemoService;
+import com.zyq.provider.proxy.ProxyFactory;
 
 import java.io.IOException;
 

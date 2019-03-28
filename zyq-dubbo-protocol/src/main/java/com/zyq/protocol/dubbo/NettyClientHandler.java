@@ -13,8 +13,10 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
     private String result;
 
 
+
+
     @Override
-    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public synchronized void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         System.out.println("接收到数据" + msg);
         result = msg.toString();
         notify();
@@ -25,7 +27,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
         context = ctx;
     }
 
-    public  Object call() throws InterruptedException {
+    public synchronized Object call() throws InterruptedException {
         context.writeAndFlush(this.invocation);
         wait();
         return result;

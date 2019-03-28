@@ -6,11 +6,11 @@ import com.zyq.jedis.utils.SafeEncoder;
 
 public class ZyqClient {
 
+    private Connection connection;
+
     public ZyqClient(String host, int port) {
         this.connection = new Connection(host, port);
     }
-
-    private Connection connection;
 
     /**
      * 他的底层还是在于操作redis
