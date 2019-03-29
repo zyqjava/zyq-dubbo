@@ -4,15 +4,15 @@ import com.zyq.framework.Invocation;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
-public class NettyClientHandler extends ChannelInboundHandlerAdapter {
+import java.util.concurrent.Callable;
+
+public class NettyClientHandler extends ChannelInboundHandlerAdapter implements Callable{
 
     public ChannelHandlerContext context;
 
     private Invocation invocation;
 
     private String result;
-
-
 
 
     @Override
@@ -27,14 +27,15 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter {
         context = ctx;
     }
 
-    public synchronized Object call() throws InterruptedException {
-        context.writeAndFlush(this.invocation);
-        wait();
-        return result;
-    }
 
     public void setInvocation(Invocation invocation) {
         this.invocation = invocation;
     }
 
+    @Override
+    public Object call() throws Exception {
+        context.writeAndFlush(this.invocation);
+        wait();
+        return result;
+    }
 }
