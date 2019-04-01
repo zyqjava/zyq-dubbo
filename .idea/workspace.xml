@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+    <list default="true" id="1db48c0c-787a-4fe0-83df-38796aa68521" name="Default" comment="netty ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-protocol/pom.xml" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java" />
       <change beforePath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-protocol/zyq-dubbo-protocol.iml" afterPath="$PROJECT_DIR$/zyq-dubbo-protocol/zyq-dubbo-protocol.iml" />
-      <change beforePath="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/Provider.java" afterPath="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/Provider.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/zyq-dubbo-transacmanager/target/" />
@@ -80,13 +73,13 @@
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1118">
-              <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NettyServerHandler.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NettyServerHandler.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServerHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
@@ -110,13 +103,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NettyClientHandler.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="NettyClientHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
+            <state relative-caret-position="39">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#892#893#0" expanded="true" />
+                <element signature="e#936#937#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,8 +205,8 @@
         <option value="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/proxy/ProxyFactory.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-consumer/src/main/java/com/zyq/consumer/Consumer.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java" />
-        <option value="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" />
         <option value="$PROJECT_DIR$/zyq-dubbo-provider/src/main/java/com/zyq/provider/Provider.java" />
+        <option value="$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java" />
       </list>
     </option>
   </component>
@@ -771,7 +766,7 @@
       <workItem from="1553820982682" duration="704000" />
       <workItem from="1553825007746" duration="191000" />
       <workItem from="1553911398008" duration="4363000" />
-      <workItem from="1554090370063" duration="4786000" />
+      <workItem from="1554090370063" duration="5698000" />
     </task>
     <task id="LOCAL-00001" summary="...">
       <created>1552697670827</created>
@@ -885,11 +880,18 @@
       <option name="project" value="LOCAL" />
       <updated>1553825033473</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="netty ok">
+      <created>1554101946467</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1554101946467</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114284000" />
+    <option name="totallyTimeSpent" value="115196000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
@@ -905,7 +907,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34739178" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963374" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -970,6 +972,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="..." />
     <MESSAGE value="搞定netty" />
@@ -979,7 +982,9 @@
     <MESSAGE value="redis ok" />
     <MESSAGE value="jedis by myself" />
     <MESSAGE value="reslove maven confict" />
-    <option name="LAST_COMMIT_MESSAGE" value="reslove maven confict" />
+    <MESSAGE value="netty ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="netty ok" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1016,37 +1021,37 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java</url>
-          <line>71</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java</url>
-          <line>36</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java</url>
-          <line>41</line>
+          <line>40</line>
           <properties />
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java</url>
-          <line>26</line>
+          <line>33</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java</url>
-          <line>45</line>
+          <line>44</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java</url>
-          <line>19</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
@@ -1404,7 +1409,7 @@
     <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1118">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1455,21 +1460,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyServerHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zyq-dubbo-protocol/src/main/java/com/zyq/protocol/dubbo/NettyClientHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#892#893#0" expanded="true" />
+            <element signature="e#936#937#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
