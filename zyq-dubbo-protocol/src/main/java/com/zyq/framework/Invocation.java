@@ -4,13 +4,13 @@ import java.io.Serializable;
 
 public class Invocation implements Serializable{
 
-    private String interfaceName;
+    private String interfaceName;  //接口名称
 
-    private String methodName;
+    private String methodName;      //方法名称
 
-    private Object[] params;
+    private Object[] params;    //参数
 
-    private Class[] paramsTypes;
+    private Class[] paramsTypes; //参数类型
 
     public Invocation(String interfaceName, String methodName, Object[] params, Class[] paramsTypes) {
         this.interfaceName = interfaceName;

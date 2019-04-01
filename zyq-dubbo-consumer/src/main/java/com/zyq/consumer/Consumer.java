@@ -11,7 +11,7 @@ public class Consumer {
 
     public static void main(String[] args) throws IOException {
         DemoService demoService = ProxyFactory.getProxy(DemoService.class);
-        String result = demoService.demoApi("123");
+        String result = demoService.demoApi("zhang","25");
         System.out.println(result);
     }
 }
