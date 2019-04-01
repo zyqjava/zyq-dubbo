@@ -16,7 +16,7 @@ public class Provider {
         URL url = new URL("127.0.0.1",8080);
         Register.register(url, DemoService.class.getName(), DemoServiceImpl.class);
 
-        //启动Tomcat
+        //启动Tomcat/netty
         Protocol protocol = ProtocolFactory.getProtocol();
         protocol.start(url);
     }

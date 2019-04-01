@@ -9,7 +9,7 @@ import org.apache.catalina.startup.Tomcat;
 
 public class HttpServer {
 
-    public void start(String hostName, Integer port) throws LifecycleException {
+    public void start(String hostName, Integer port) {
 
         //通过server.xml的格式
         // 实例一个tomcat
@@ -57,7 +57,11 @@ public class HttpServer {
         tomcat.addServlet(contextPath, "dispatcher", new DispathcerServlet());
         context.addServletMappingDecoded("/*","dispatcher");
 
-        tomcat.start();
+        try {
+            tomcat.start();
+        } catch (LifecycleException e) {
+            e.printStackTrace();
+        }
         tomcat.getServer().await();     // 接受请求
 
     }

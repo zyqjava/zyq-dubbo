@@ -1,6 +1,6 @@
 package com.zyq.protocol.dubbo;
 
-import com.zyq.framework.Invocation;
+import com.zyq.framework.InvocationHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.*;
 import io.netty.channel.nio.NioEventLoopGroup;
@@ -60,7 +60,7 @@ public class NettyClient {
         eventLoopGroup.shutdownGracefully();*/
     }
 
-    public String post(String hostName, Integer port, Invocation invocation) {
+    public String post(String hostName, Integer port, InvocationHandler invocation) {
         if (nettyClientHandler == null) {
             try {
                 start(hostName, port);

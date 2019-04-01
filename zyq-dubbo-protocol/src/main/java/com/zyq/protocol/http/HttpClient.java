@@ -1,6 +1,6 @@
 package com.zyq.protocol.http;
 
-import com.zyq.framework.Invocation;
+import com.zyq.framework.InvocationHandler;
 import org.apache.commons.io.IOUtils;
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ import java.net.URL;
 
 
 public class HttpClient {
-    public String post(String hostName, Integer port, Invocation invocation) throws IOException {
+    public String post(String hostName, Integer port, InvocationHandler invocation) throws IOException {
         // 进行http连接
         URL url = new URL("http", hostName, port, "/");
         HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();

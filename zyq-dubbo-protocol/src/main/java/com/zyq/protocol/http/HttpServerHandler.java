@@ -1,6 +1,6 @@
 package com.zyq.protocol.http;
 
-import com.zyq.framework.Invocation;
+import com.zyq.framework.InvocationHandler;
 import com.zyq.framework.URL;
 import com.zyq.register.Register;
 import org.apache.commons.io.IOUtils;
@@ -21,7 +21,7 @@ public class HttpServerHandler {
         // Http请求流转为对象
         InputStream inputStream = req.getInputStream();
         ObjectInputStream ois = new ObjectInputStream(inputStream);
-        Invocation invocation = (Invocation) ois.readObject();
+        InvocationHandler invocation = (InvocationHandler) ois.readObject();
 
         //找到实现类，URL一定要重写equals与hashCode方法，
         String interfaceName = invocation.getInterfaceName();

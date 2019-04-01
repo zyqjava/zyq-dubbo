@@ -2,7 +2,7 @@ package com.zyq.framework;
 
 import java.io.Serializable;
 
-public class Invocation implements Serializable{
+public class InvocationHandler implements Serializable{
 
     private String interfaceName;  //接口名称
 
@@ -12,7 +12,7 @@ public class Invocation implements Serializable{
 
     private Class[] paramsTypes; //参数类型
 
-    public Invocation(String interfaceName, String methodName, Object[] params, Class[] paramsTypes) {
+    public InvocationHandler(String interfaceName, String methodName, Object[] params, Class[] paramsTypes) {
         this.interfaceName = interfaceName;
         this.methodName = methodName;
         this.params = params;

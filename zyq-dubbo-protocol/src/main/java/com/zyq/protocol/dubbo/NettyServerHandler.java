@@ -1,6 +1,6 @@
 package com.zyq.protocol.dubbo;
 
-import com.zyq.framework.Invocation;
+import com.zyq.framework.InvocationHandler;
 import com.zyq.framework.URL;
 import com.zyq.register.Register;
 import io.netty.channel.ChannelHandlerContext;
@@ -14,7 +14,7 @@ public class NettyServerHandler extends ChannelInboundHandlerAdapter{
     @Override
     public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         //获取数据
-        Invocation invocation = (Invocation) msg;
+        InvocationHandler invocation = (InvocationHandler) msg;
         InetSocketAddress insocket = (InetSocketAddress) ctx.channel().localAddress();
         Class serviceImpl = Register.get(new URL(insocket.getHostName(), insocket.getPort()),invocation.getInterfaceName());
 

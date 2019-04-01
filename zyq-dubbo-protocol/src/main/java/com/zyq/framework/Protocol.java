@@ -7,5 +7,5 @@ import java.lang.reflect.InvocationTargetException;
 
 public interface Protocol {
     void start(URL url) throws InterruptedException, LifecycleException;
-    String send(URL url, Invocation invocation) throws InterruptedException, IOException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException;
+    String send(URL url, InvocationHandler invocation) throws InterruptedException, IOException, InvocationTargetException, NoSuchMethodException, InstantiationException, IllegalAccessException;
 }

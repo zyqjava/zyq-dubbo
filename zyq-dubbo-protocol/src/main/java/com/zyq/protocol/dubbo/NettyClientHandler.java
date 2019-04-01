@@ -1,6 +1,6 @@
 package com.zyq.protocol.dubbo;
 
-import com.zyq.framework.Invocation;
+import com.zyq.framework.InvocationHandler;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.ChannelInboundHandlerAdapter;
 
@@ -10,7 +10,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
 
     public ChannelHandlerContext context;
 
-    private Invocation invocation;
+    private InvocationHandler invocation;
 
     private String result;
 
@@ -35,7 +35,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     }
 
 
-    public void setInvocation(Invocation invocation) {
+    public void setInvocation(InvocationHandler invocation) {
         this.invocation = invocation;
     }
 

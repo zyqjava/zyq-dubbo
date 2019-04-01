@@ -13,7 +13,7 @@ import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
 public class NettyServer {
-    public void start(String hostName, Integer port) throws InterruptedException {
+    public void start(String hostName, Integer port) {
 
         final ServerBootstrap bootstrap = new ServerBootstrap();
 
@@ -35,7 +35,12 @@ public class NettyServer {
                         pipeline.addLast("handler",new NettyServerHandler()); //添加处理的类
                     }
                 }).option(ChannelOption.SO_KEEPALIVE,true);
-        ChannelFuture channelFuture = bootstrap.bind(hostName ,port).sync();
+        ChannelFuture channelFuture = null;
+        try {
+            channelFuture = bootstrap.bind(hostName ,port).sync();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         if (channelFuture.isSuccess()) {
             System.out.println("server:start to connect...");
         } else {
@@ -43,6 +48,10 @@ public class NettyServer {
         }
 
 
-        channelFuture.channel().closeFuture().sync();
+        try {
+            channelFuture.channel().closeFuture().sync();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
