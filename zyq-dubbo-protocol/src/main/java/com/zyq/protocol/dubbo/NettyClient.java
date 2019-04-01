@@ -10,21 +10,20 @@ import io.netty.handler.codec.serialization.ClassResolvers;
 import io.netty.handler.codec.serialization.ObjectDecoder;
 import io.netty.handler.codec.serialization.ObjectEncoder;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class NettyClient {
 
-    private static ExecutorService executorService = Executors.newCachedThreadPool();
+    private ExecutorService executorService = Executors.newCachedThreadPool();
 
-    private static Channel channel;
+    public  NettyClientHandler nettyClientHandler = null;
 
-    private static NettyClientHandler nettyClientHandler;
-
-    public static void start(String hostName, Integer port) throws InterruptedException {
+    public  void start(String hostName, Integer port) throws InterruptedException {
         nettyClientHandler = new NettyClientHandler();
+
         final EventLoopGroup eventLoopGroup = new NioEventLoopGroup();
         Bootstrap bootstrap = new Bootstrap();
         bootstrap.group(eventLoopGroup);
@@ -44,7 +43,6 @@ public class NettyClient {
         });
         //连接服务端
         ChannelFuture channelFuture = bootstrap.connect(hostName, port).sync();
-        channel = channelFuture.channel();
         channelFuture.addListener((new ChannelFutureListener() {
             @Override
             public void operationComplete(ChannelFuture channelFuture) throws Exception {
@@ -73,14 +71,14 @@ public class NettyClient {
         nettyClientHandler.setInvocation(invocation);
         try {
             try {
-                return (String) executorService.submit(nettyClientHandler).get();
+                Future future = executorService.submit(nettyClientHandler);
+                return (String) future.get();
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-
         /* InetSocketAddress insocket = (InetSocketAddress) nettyClientHandler.context.channel().localAddress();*//*
         Class serviceImpl = Register.get(new URL(hostName, port),invocation.getInterfaceName());
 
@@ -90,7 +88,4 @@ public class NettyClient {
         return null;
     }
 
-    public void setChannel(Channel channel) {
-        this.channel = channel;
-    }
 }

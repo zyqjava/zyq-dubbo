@@ -13,7 +13,7 @@ import java.io.IOException;
 public class Provider {
     public static void main(String[] args) throws LifecycleException, IOException, InterruptedException {
         //注册服务
-        URL url = new URL("localhost",8080);
+        URL url = new URL("127.0.0.1",8080);
         Register.register(url, DemoService.class.getName(), DemoServiceImpl.class);
 
         //启动Tomcat

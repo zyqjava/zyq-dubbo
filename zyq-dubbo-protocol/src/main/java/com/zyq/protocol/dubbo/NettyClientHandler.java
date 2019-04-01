@@ -33,7 +33,7 @@ public class NettyClientHandler extends ChannelInboundHandlerAdapter implements 
     }
 
     @Override
-    public Object call() throws Exception {
+    public synchronized Object call() throws Exception {
         context.writeAndFlush(this.invocation);
         wait();
         return result;
